@@ -71,7 +71,7 @@ def add_records(project):
             dept_gascount = str(check.count(True))
             dept_AVSU = 'None' if dept_AVSU == 0 else str(dept_AVSU) + ' Set' 
             st.write('')
-            st.info('Dept-AVSU:- ' + dept_gascount + ' Gas')
+            st.info('Dept AVSU:- ' + dept_gascount + ' Gas')
         
     if floor != '' and dept!='' and room != '': 
         AddROOMStoDB(project, dept, dept_AVSU, floor, room)
